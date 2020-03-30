@@ -28,8 +28,87 @@
       </nav>
     </header>
 
-    <main>
-
+    <main class="page-main">
+      <h1 class="page-main__header">Подбор программы</h1>
+      <section class="questionnaire">
+        <h2 class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        <form class="questionnaire__form form">
+          <p class="form__name">  
+            <label class="form__name-label" for="name">Имя:*</label>    
+            <input class="form__name-input" type="text" name="name" id="name" value="Барсик">
+          </p>
+          <p class="form__weight">
+            <label class="form__weight-label" for="weight">Вес (кг):*</label>
+            <input class="form__weight-input" type="text" name="weight" id="weight" value="7"> 
+          </p>
+          <p class="form__age">
+            <label class="form__age-label" for="age">Возраст (лет):</label>
+            <input class="form__age-input" type="text" name="age" id="age" value="7">
+          </p>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__item-input" type="checkbox" name="losing-weight" id="losing-weight">
+              <label class="form__item-label" for="losing-weight">Похудение</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item-input" type="checkbox" name="weight-checkbox" id="weight-checkbox">
+              <label class="form__item-label" for="weight-checkbox">Набор массы</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item-input" type="checkbox" name="recommendation" id="recommendation">
+              <label class="form__item-label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+          <fieldset class="form__contact-details contact-details">
+            <legend class="contact-details__legend">Контактные данные (владельца кота)</legend>  
+            <p class="contact-details__email">  
+              <label class="contact-details__email-label" for="email">E-mail:*</label>
+              <input class="contact-details__email-input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+            </p>
+            <p class="contact-details__tel">
+              <label class="contact-details__tel-label" for="tel">Телефон:*</label>
+              <input class="contact-details__tel-input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90">
+            </p>
+          </fieldset>  
+          <fieldset class="form__comment">
+            <legend class="form__comment-legend">Комментарий</legend>
+            <textarea class="form__comment-text" name="comments" rows="7" cols="36">Расскажите обо всех повадках кота</textarea>
+          </fieldset>  
+          <fieldset class="form__additionally">
+            <legend class="form__additionally-legend">Дополнительно</legend>
+            <ul class="form-additionally__list">
+              <li class="form-additionally__item">
+                <input class="form-additionally__item-input" type="checkbox" name="sugar-substitute" id="sugar-substitute">
+                <label class="form-additionally__item-label" for="sugar-substitute">Сахарозаменитель</label>
+              </li>
+              <li class="form-additionally__item">
+                <input class="form-additionally__item-input" type="checkbox" name="drinking-water" id="drinking-water">
+                <label class="form-additionally__item-label" for="drinking-water">Питьевая вода</label>
+              </li>
+              <li class="form-additionally__item">
+                <input class="form-additionally__item-input" type="checkbox" name="milk" id="milk">
+                <label class="form-additionally__item-label" for="milk">Молоко</label>
+              </li>
+              <li class="form-additionally__item">
+                <input class="form-additionally__item-input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form-additionally__item-label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить заявку</button>
+          <p class="form__text">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="about-company">
+        <h2 class="visually-hidden">Адрес и карта</h2>
+        <div class="about-company__block">
+          <p class="about-company__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="about-company__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="about-company__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585595961119!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>"
+        </div>
+      </section>      
     </main>
 
     <footer class="page-footer">
