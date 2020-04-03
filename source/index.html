@@ -3,46 +3,52 @@
   <head>
     <meta charset="UTF-8">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo logo">
         <a class="logo__image">
-          <img class="logo__image-link" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип-иконка 'Голова кошки'">
+          <img class="logo__image-link" src="../img/logo-mobile.svg" width="191" height="39" alt="Логотип-иконка 'Голова кошки'">
         </a>
         <a class="logo__text"  aria-label="Логотип-текст 'Cat Energy'"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__menu" type="button">Открыть меню</button>
         <ul class="main-nav__list menu-list">
-          <li class="menu-list__item menu-list__item--active">
-            <a>Главная</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="menu-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="menu-list__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="programs">
-        <h1 class="programs__title">Функциональное питание для котов</h1>
-        <p class="programs__text">Занялся собой? Займись котом!</p>
+        <div class="programs-wrapper">
+          <h1 class="programs__header">Функциональное питание для котов</h1>
+          <p class="programs__text">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="programs__image-wrapper">
+          <img class="programs__image" src="../img/index-can-mobile.png" width="280" height="270" alt="Банка с курицей">
+        </div>
         <a class="button programs__button" href="form.html" aria-label="Подобрать программу">
-          <h2>Подобрать программу</h2>
+          <h2 class="programs__button-text">Подобрать программу</h2>
         </a>
         <ul class="programs__list">
           <li class="programs__item programs__item--losing-weight">
             <p class="programs__title">Похудение</p>
-            <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="programs__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="catalog.html" aria-label="Каталог Slim">Каталог Slim</a>
           </li>
           <li class="programs__item programs__item--weight-set">
             <p class="programs__title">Набор массы</p>
-            <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="programs__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="catalog.html" aria-label="Каталог Pro">Каталог Pro</a>
           </li>
         </ul>
@@ -100,23 +106,23 @@
         <div class="page-footer__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585595961119!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>"
         </div>
-        <div class="page-footer__logo logo">
+        <div class="page-footer__logo">
           <a class="logo__text" aria-label="Логотип-текст 'Cat Energy'"></a>
         </div>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+            <a class="social__link-vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
           </li>
           <li class="social__item">
-            <a class="social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
+            <a class="social__link-instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
           </li>
           <li class="social__item">
-            <a class="social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+            <a class="social__link-facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
           </li>
         </ul>
         <div class="page-footer_copyright copyright">
           <p class="copyright__text">HTML Academy</p>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2"></a>
         </div>
       </div>
     </footer>
