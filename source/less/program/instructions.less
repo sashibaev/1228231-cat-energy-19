@@ -5,8 +5,42 @@
   color: @color-title;
 }
 
+.instructions__list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .instructions__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instructions__list {
+    padding: 0 110px;
+  }
+}
+
 .instructions__item {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .instructions__item {
+    margin-right: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instructions__item {
+    margin-right: 30px;
+  }
 }
 
 .instructions__text {
