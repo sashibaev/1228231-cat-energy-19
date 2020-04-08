@@ -11,22 +11,6 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__wrapper {
-    min-height: 200px;
-    margin-bottom: 20px;
-
-    background: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programs__wrapper {
-    margin-bottom: 25px;
-    padding-top: 50px;
-  }
-}
-
 .programs__header {
   width: 270px;
   margin: 0 auto 19px;
@@ -38,24 +22,6 @@
   color: @light-color-text;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__header {
-    width: 450px;
-    margin-left: 120px;
-
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: @color-title;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programs__header {
-    margin-left: 193px;
-  }
-}
-
 .programs__text {
   font-size: 14px;
   font-weight: 400;
@@ -63,29 +29,6 @@
   text-transform: uppercase;
   text-align: center;
   color: @light-color-text;
-}
-
-@media (min-width: @tablet-width) {
-  .programs__text {
-    display: inline-block;
-    align-items: top;
-    margin-left: 120px;
-
-    font-size: 18px;
-    line-height: 25px;
-    text-align: left;
-    color: @catalog-color-text;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programs__text {
-    margin-left: 193px;
-
-    font-size: 20px;
-    line-height: 20px;
-    color: @color-title;
-  }
 }
 
 .programs__image-wrapper {
@@ -103,32 +46,6 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__image-wrapper {
-    top: 225px;
-    z-index: -1;
-
-    width: 709px;
-    height: 609px;
-
-    background-image: url("../img/index-can-tablet.jpg");
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programs__image-wrapper {
-    top: 100px;
-    left: 50%;
-    transform: translate(20px);
-    z-index: 1;
-
-    width: 552px;
-    height: 499px;
-
-    background-image: url("../img/index-can-desktop.png");
-  }
-}
-
 .programs__button {
   display: inline-block;
   vertical-align: top;
@@ -141,21 +58,6 @@
   background-color: @button-background-color;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__button {
-    width: 245px;
-    min-height: 52px;
-    margin: 0 268px 529px 120px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programs__button {
-    margin-bottom: 330px;
-    margin-left: 193px;
-  }
-}
-
 .programs__button-text {
   font-size: 14px;
   font-weight: 400;
@@ -164,39 +66,16 @@
   color: @button-color-text;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__button-text {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
 .programs__list {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-@media (min-width: @desktop-width) {
-  .programs__list {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0 50px;
-  }
-}
-
 .programs__item {
   background-color: @block-background-color;
 
   list-style: none;
-}
-
-@media (min-width: @desktop-width) {
-  .programs__item {
-    width: 500px;
-    min-height: 372px;
-  }
 }
 
 .programs__title {
@@ -207,24 +86,11 @@
   color: @color-title;
 }
 
-@media (min-width: @tablet-width) {
-  .programs__title {
-    font-size: 36px;
-  }
-}
-
 .programs__item-text {
   font-size: 14px;
   line-height: 18px;
   font-family: @font;
   color: @color-text;
-}
-
-@media (min-width: @tablet-width) {
-  .programs__item-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
 
 .programs__link {
@@ -235,8 +101,114 @@
 }
 
 @media (min-width: @tablet-width) {
+  .programs__wrapper {
+    min-height: 200px;
+    margin-bottom: 20px;
+
+    background: none;
+  }
+
+  .programs__header {
+    width: 450px;
+    margin-left: 120px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @color-title;
+  }
+
+  .programs__text {
+    display: inline-block;
+    align-items: top;
+    margin-left: 120px;
+
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: @catalog-color-text;
+  }
+
+  .programs__image-wrapper {
+    top: 225px;
+    z-index: -1;
+
+    width: 709px;
+    height: 609px;
+
+    background-image: url("../img/index-can-tablet.jpg");
+  }
+
+  .programs__button {
+    width: 245px;
+    min-height: 52px;
+    margin: 0 268px 529px 120px;
+  }
+
+  .programs__button-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+  }
+
+  .programs__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__wrapper {
+    margin-bottom: 25px;
+    padding-top: 50px;
+  }
+
+  .programs__header {
+    margin-left: 193px;
+  }
+
+  .programs__text {
+    margin-left: 193px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: @color-title;
+  }
+
+  .programs__image-wrapper {
+    top: 100px;
+    left: 50%;
+    transform: translate(20px);
+    z-index: 1;
+
+    width: 552px;
+    height: 499px;
+
+    background-image: url("../img/index-can-desktop.png");
+  }
+
+  .programs__button {
+    margin-bottom: 330px;
+    margin-left: 193px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 50px;
+  }
+
+  .programs__item {
+    width: 500px;
+    min-height: 372px;
   }
 }

@@ -15,20 +15,12 @@ body {
   border: 1px solid #000000;
 }
 
-@media (min-width: @tablet-width) {
-  body {
-    min-width: @tablet-width;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: @desktop-width;
-  }
-}
-
 a {
   text-decoration: none;
+}
+
+li {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -40,4 +32,16 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: @desktop-width;
+  }
 }

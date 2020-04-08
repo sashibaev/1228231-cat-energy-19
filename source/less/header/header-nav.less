@@ -17,15 +17,6 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: @tablet-width) {
-  .header-nav__logo {
-    width: 174px;
-    height: 59px;
-
-    background-image: url("../img/logo-tablet.svg");
-  }
-}
-
 .header-nav__menu {
   width: 25px;
   height: 19px;
@@ -36,6 +27,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .header-nav__logo {
+    width: 174px;
+    height: 59px;
+
+    background-image: url("../img/logo-tablet.svg");
+  }
+
   .header-nav__menu {
     position: absolute;
     width: 1px;
@@ -47,3 +45,4 @@
     overflow: hidden;
   }
 }
+
