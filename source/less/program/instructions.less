@@ -5,6 +5,12 @@
   color: @color-title;
 }
 
+@media (min-width: @tablet-width) {
+  .instructions__header {
+    font-size: 60px;
+  }
+}
+
 .instructions__list {
   margin: 0;
   padding: 0;
@@ -50,4 +56,11 @@
   line-height: 18px;
   font-family: @font;
   color: @color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .instructions__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

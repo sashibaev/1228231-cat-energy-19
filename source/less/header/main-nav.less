@@ -44,7 +44,6 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
-  color: @link-color-text;
 }
 
 @media (min-width: @tablet-width) {
@@ -52,13 +51,37 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    color: @nav-color-text;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .main-nav__link {
     font-size: 20px;
-    color: @link-color-text;
+  }
+}
+
+.main-nav__link-nav {
+  color: @link-color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__link-nav {
+   counter-reset: @nav-color-text;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link-nav {
+   counter-reset: @link-color-text;
+  }
+}
+
+.main-nav__index-nav {
+  color: @link-color-text;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__index-nav {
+    color: @light-color-text;
   }
 }

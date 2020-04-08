@@ -71,16 +71,20 @@
     align-items: top;
     margin-left: 120px;
 
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: left;
-    color: @color-title;
+    color: @catalog-color-text;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs__text {
     margin-left: 193px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: @color-title;
   }
 }
 
@@ -126,10 +130,13 @@
 }
 
 .programs__button {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   width: 280px;
   min-height: 40px;
-  margin: 0 auto;
+
+  text-transform: uppercase;
+  color: @button-color-text;
 
   background-color: @button-background-color;
 }
@@ -155,6 +162,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @button-color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__button-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .programs__list {
@@ -193,6 +207,12 @@
   color: @color-title;
 }
 
+@media (min-width: @tablet-width) {
+  .programs__title {
+    font-size: 36px;
+  }
+}
+
 .programs__item-text {
   font-size: 14px;
   line-height: 18px;
@@ -200,9 +220,23 @@
   color: @color-text;
 }
 
+@media (min-width: @tablet-width) {
+  .programs__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .programs__link {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @link-color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

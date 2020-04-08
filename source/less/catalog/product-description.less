@@ -6,9 +6,21 @@
   color: @color-title;
 }
 
+@media (min-width: @tablet-width) {
+  .product-description__title {
+    font-size: 20px;
+  }
+}
+
 .product-description__item {
   font-size: 12px;
   line-height: 16px;
   font-family: @font;
   color: @color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .product-description__item {
+    font-size: 16px;
+  }
 }
