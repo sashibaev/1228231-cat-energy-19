@@ -1,5 +1,210 @@
+.base-directory__list {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .base-directory__item {
+  position: relative;
+
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__item {
+    width: 324px;
+    min-height: 431px;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding-top: 200px;
+    box-sizing: border-box;
+
+    background-color: @block-background-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__item {
+    width: 245px;
+    min-height: 431px;
+  }
+}
+
+.base-directory__item-all {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__item-all {
+    width: 324px;
+    min-height: 431px;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding-top: 200px;
+    box-sizing: border-box;
+    border: 1px solid @border-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__item-all {
+    width: 245px;
+    min-height: 431px;
+  }
+}
+
+.base-directory__product-small,
+.base-directory__product-big {
+  width: 140px;
+  height: 144px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__product-small {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    width: 161px;
+    height: 172px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__product-big {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    width: 195px;
+    height: 208px;
+  }
+}
+
+.base-directory__chicken-small {
+  background-image: url("../img/chicken-small-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__chicken-small {
+    background-image: url("../img/chicken-small-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__chicken-small {
+    background-image: url("../img/chicken-small-desktop.png");
+  }
+}
+
+.base-directory__chicken-big {
+  background-image: url("../img/chicken-big-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__chicken-big {
+    background-image: url("../img/chicken-big-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__chicken-big {
+    background-image: url("../img/chicken-big-desktop.png");
+  }
+}
+
+.base-directory__fish-small {
+  background-image: url("../img/fish-small-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__fish-small {
+    background-image: url("../img/fish-small-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__fish-small {
+    background-image: url("../img/fish-small-desktop.png");
+  }
+}
+
+.base-directory__fish-big {
+  background-image: url("../img/fish-big-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__fish-big {
+    background-image: url("../img/fish-big-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__fish-big {
+    background-image: url("../img/fish-big-desktop.png");
+  }
+}
+
+.base-directory__buckwheat-small {
+  background-image: url("../img/buckwheat-small-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__buckwheat-small {
+    background-image: url("../img/buckwheat-small-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__buckwheat-small {
+    background-image: url("../img/buckwheat-small-desktop.png");
+  }
+}
+
+.base-directory__buckwheat-big {
+  background-image: url("../img/buckwheat-big-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__buckwheat-big {
+    background-image: url("../img/buckwheat-big-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__buckwheat-big {
+    background-image: url("../img/buckwheat-big-desktop.png");
+  }
+}
+
+.base-directory__rice-small {
+  background-image: url("../img/rice-small-mobile.jpg");
+}
+
+@media (min-width: @tablet-width) {
+  .base-directory__rice-small {
+    background-image: url("../img/rice-small-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .base-directory__rice-small {
+    background-image: url("../img/rice-small-desktop.png");
+  }
 }
 
 .base-directory__link {
