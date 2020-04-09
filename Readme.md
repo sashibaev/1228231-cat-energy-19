@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Шибаев](https://up.htmlacademy.ru/adaptive/19/user/1228231).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/babtshe).
 
 ---
 
