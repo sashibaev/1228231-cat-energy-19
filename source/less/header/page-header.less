@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 90px;
+    padding-right: 110px;
+  }
+}
