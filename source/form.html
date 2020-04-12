@@ -40,42 +40,48 @@
       <section class="questionnaire">
         <h2 class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</h2>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__name">
-            <label class="form__label form__name-label" for="name">Имя:*</label>
-            <input class="form__input form__name-input" type="text" name="name" id="name" placeholder="Барсик" required>
-          </p>
-          <p class="form__weight">
-            <label class="form__label form__weight-label" for="weight">Вес (кг):*</label>
-            <input class="form__input form__weight-input" type="number" name="weight" id="weight" placeholder="7" required>
-          </p>
-          <p class="form__age">
-            <label class="form__label form__age-label" for="age">Возраст (лет):</label>
-            <input class="form__input form__age-input" type="number" name="age" id="age" placeholder="7">
-          </p>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__label form__item-input" type="radio" name="response" value="losing-weight" id="losing-weight" checked>
-              <label class="form__item-label" for="losing-weight">Похудение</label>
-            </li>
-            <li class="form__item">
-              <input class="form__label form__item-input" type="radio" name="response" value="weight-set" id="weight-set">
-              <label class="form__item-label" for="weight-set">Набор массы</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item-input" type="radio" name="response" value="recommendation" id="recommendation">
-              <label class="form__label form__item-label" for="recommendation">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
+          <div class="form__cat">
+            <div class="form__cat-wrapper">
+              <p class="form__name">
+                <label class="form__label form__name-label" for="name">Имя:*</label>
+                <input class="form__input form__name-input" type="text" name="name" id="name" placeholder="Барсик" required>
+              </p>
+              <p class="form__weight">
+                <label class="form__label form__weight-label" for="weight">Вес (кг):*</label>
+                <input class="form__input form__weight-input" type="number" name="weight" id="weight" placeholder="7" required>
+              </p>
+              <p class="form__age">
+                <label class="form__label form__age-label" for="age">Возраст (лет):</label>
+                <input class="form__input form__age-input" type="number" name="age" id="age" placeholder="7">
+              </p>
+            </div>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__label form__item-input" type="radio" name="response" value="losing-weight" id="losing-weight" checked>
+                <label class="form__item-label" for="losing-weight">Похудение</label>
+              </li>
+              <li class="form__item">
+                <input class="form__label form__item-input" type="radio" name="response" value="weight-set" id="weight-set">
+                <label class="form__item-label" for="weight-set">Набор массы</label>
+              </li>
+              <li class="form__item">
+                <input class="form__item-input" type="radio" name="response" value="recommendation" id="recommendation">
+                <label class="form__label form__item-label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
           <fieldset class="form__contact-details contact-details">
             <legend class="form__legend contact-details__legend">Контактные данные (владельца кота)</legend>
-            <p class="contact-details__email">
-              <label class="form__label contact-details__email-label" for="email">E-mail:*</label>
-              <input class="form__input contact-details__email-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-            </p>
-            <p class="contact-details__tel">
-              <label class="form__label contact-details__tel-label" for="tel">Телефон:*</label>
-              <input class="form__input contact-details__tel-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-            </p>
+            <div class="contact-details__wrapper">
+              <p class="contact-details__email">
+                <label class="form__label contact-details__email-label" for="email">E-mail:*</label>
+                <input class="form__input contact-details__email-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="contact-details__tel">
+                <label class="form__label contact-details__tel-label" for="tel">Телефон:*</label>
+                <input class="form__input contact-details__tel-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__comment">
             <legend class="form__legend">Комментарий</legend>
@@ -110,7 +116,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__foot-wrapper">
-        <div class="page-footer__block page-footer__company">
+        <div class="page-footer__block">
           <p class="page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>

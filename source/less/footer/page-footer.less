@@ -6,11 +6,13 @@
   background-color: @block-background-color;
 }
 
-.page-footer__company {
+.page-footer__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.page-footer__company {
   background-color: @background-color;
 }
 
@@ -77,13 +79,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__company {
+  .page-footer__block {
     position: absolute;
     z-index: 1;
     top: 50px;
     left: 110px;
 
     width: 570px;
+
+    background-color: @background-color;
   }
 
   .page-footer__wrapper {

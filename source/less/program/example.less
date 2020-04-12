@@ -1,6 +1,5 @@
 .example {
   width: 100%;
-  min-height: 705px;
   margin: 0;
   padding: 0;
 
@@ -19,6 +18,11 @@
   line-height: 18px;
   font-family: @font;
   color: @color-text;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .example__item {
@@ -40,11 +44,22 @@
 }
 
 .example__all-cost {
+  text-align: center;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: @color-title;
+}
+
+.example__cat {
+  text-align: center;
+}
+
+.example__block-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__link {
@@ -53,4 +68,22 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @link-color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .example__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__list-wrapper {
+    display: block;
+  }
 }
