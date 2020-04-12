@@ -70,7 +70,7 @@
   color: @link-color-text;
 }
 
-@media (min-width: @tablet-width) and (max-width: @tablet-interval) {
+@media (min-width: @tablet-width) {
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
@@ -81,5 +81,9 @@
   .example {
     display: flex;
     justify-content: space-between;
+  }
+
+  .example__list-wrapper {
+    display: block;
   }
 }
