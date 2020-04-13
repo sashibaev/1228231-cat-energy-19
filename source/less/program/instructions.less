@@ -1,4 +1,14 @@
+.instructions {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 17px;
+}
+
 .instructions__header {
+  margin: 0;
+  margin-left: 20px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -8,15 +18,67 @@
 .instructions__list {
   margin: 0;
   padding: 0;
+  padding-top: 4px;
+  padding-bottom: 46px;
   border: 0;
 }
 
 .instructions__item {
+  position: relative;
+
+  margin-top: 26px;
+
   list-style: none;
+}
+
+.instructions__item::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: -2px;
+  left: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #68b738;
+}
+
+.instructions__item::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+
+  top: 3px;
+  left: 25px;
+
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.instructions__item--structure::after {
+  background-image: url("../img/advantage-leaf.png");
+}
+
+.instructions__item--form::after {
+  background-image: url("../img/advantage-powder.png");
+}
+
+.instructions__item--meal::after {
+  background-image: url("../img/advantage-dining.png");
+}
+
+.instructions__item--result::after {
+  background-image: url("../img/advantage-clock.png");
 }
 
 .instructions__text {
   width: 200px;
+  margin: 0;
+  margin-left: 100px;
 
   font-size: 14px;
   line-height: 18px;

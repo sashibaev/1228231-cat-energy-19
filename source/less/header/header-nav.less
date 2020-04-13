@@ -3,9 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  min-height: 65px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 19px 17px 20px;
 }
 
 .header-nav__logo {
@@ -13,16 +11,31 @@
   height: 39px;
 }
 
+.header-nav__close {
+  width: 19px;
+  height: 19px;
+  margin-top: 5px;
+
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
 .header-nav__menu {
   width: 25px;
   height: 19px;
 
-  background-image: url("../img/icon-close.svg");
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon-mobile-menu.svg");
   background-position: center;
   background-repeat: no-repeat;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
+  .header-nav__close,
   .header-nav__menu {
     position: absolute;
     width: 1px;
