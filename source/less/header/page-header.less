@@ -5,7 +5,11 @@
 
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
+}
+
+.page-header__main-nav--close {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,6 +20,10 @@
     padding-left: 10px;
     padding-right: 30px;
   }
+
+  .page-header__main-nav--close {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -25,5 +33,9 @@
 
     padding-left: 90px;
     padding-right: 110px;
+  }
+
+  .page-header__main-nav--close {
+    display: block;
   }
 }

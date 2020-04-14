@@ -6,11 +6,29 @@
   color: @color-title;
 }
 
+.product-description__title-wrapper {
+  width: 75px;
+  margin-top: 19px;
+  margin-bottom: 7px;
+}
+
+.product-description__list {
+  margin: 0;
+  padding: 0;
+}
+
 .product-description__item {
+  display: flex;
+  justify-content: space-between;
+
   font-size: 12px;
   line-height: 16px;
   font-family: @font;
   color: @color-text;
+}
+
+.product-description__item-text {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
