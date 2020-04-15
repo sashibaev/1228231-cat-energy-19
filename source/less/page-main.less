@@ -1,12 +1,16 @@
 .page-main {
   margin: 0;
   padding: 0;
+}
 
+.page-main__catalog {
+  margin: 0;
+  padding: 0;
   border-top: 1px solid @border-color-catalog;
 }
 
 .page-main__header {
-  margin: 16px 0 28px 20px;
+  margin: 15px 0 28px 20px;
 
   font-size: 36px;
   font-weight: 400;
@@ -15,7 +19,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-main__catalog {
+    border: none;
+  }
+
   .page-main__header {
+    margin: 61px 0 0 30px;
+
     font-size: 60px;
     line-height: 60px;
   }

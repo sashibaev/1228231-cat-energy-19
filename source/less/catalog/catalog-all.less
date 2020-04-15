@@ -1,3 +1,7 @@
+.catalog-all {
+  position: relative;
+}
+
 .catalog-all__title {
   margin: 0;
   margin-left: 2px;
@@ -9,6 +13,22 @@
   text-transform: uppercase;
   text-align: center;
   color: @color-title;
+}
+
+.catalog-all__title::before {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+
+  width: 31px;
+  height: 31px;
+
+  background-image: url("../img/icon-plus.svg");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .catalog-all__text {
@@ -35,10 +55,30 @@
 
 @media (min-width: @tablet-width) {
   .catalog-all__title {
+    width: 140px;
+    margin: 0 auto 26px;
+
     font-size: 20px;
+    text-align: center;
+  }
+
+  .catalog-all__title::before {
+    top: 54px;
+
+    width: 61px;
+    height: 61px;
   }
 
   .catalog-all__text {
+    width: 170px;
+    margin: 0 auto 85px;
+
     font-size: 16px;
+    line-height: normal;
+  }
+
+  .catalog-all__link {
+    display: block;
+    margin: 0 auto;
   }
 }

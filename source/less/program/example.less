@@ -1,7 +1,7 @@
 .example {
   width: 100%;
   margin: 0;
-  padding: 17px 20px 52px;
+  padding: 17px 20px 60px;
   box-sizing: border-box;
 
   background-color: @block-background-color;
@@ -82,9 +82,37 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    padding: 0;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-bottom: 102px;
+  }
+
+  .example__title {
+    margin-bottom: 64px;
+
+    font-size: 60px;
+  }
+
+  .example__text {
+    width: 680px;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 40px;
+  }
+
+  .example__cat-image {
+    width: 676px;
+    height: 499px;
   }
 }
 

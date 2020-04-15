@@ -1,9 +1,8 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  padding: 10px 20px 16px 20px;
+  padding: 10px 0 16px 20px;
 }
 
 .header-nav__logo {
@@ -14,7 +13,8 @@
 .header-nav__close {
   width: 19px;
   height: 19px;
-  margin-top: 5px;
+  margin-top: 13px;
+  margin-right: 23px;
 
   background-color: rgba(255, 255, 255, 0);
   background-image: url("../img/icon-close.svg");
@@ -26,6 +26,8 @@
 .header-nav__menu {
   width: 25px;
   height: 19px;
+  margin-top: 13px;
+  margin-right: 19px;
 
   background-color: rgba(255, 255, 255, 0);
   background-image: url("../img/icon-mobile-menu.svg");
@@ -45,5 +47,25 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .header-nav {
+    padding-top: 24px;
+  }
+
+  .header-nav__image {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-nav {
+    padding-top: 53px;
+  }
+
+  .header-nav__image {
+    width: 203px;
+    height: 60px;
   }
 }

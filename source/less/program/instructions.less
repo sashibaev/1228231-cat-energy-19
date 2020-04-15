@@ -20,7 +20,6 @@
   padding: 0;
   padding-top: 4px;
   padding-bottom: 46px;
-  border: 0;
 }
 
 .instructions__item {
@@ -87,7 +86,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .instructions {
+    width: 768px;
+
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
   .instructions__header {
+    margin: 0;
+    margin-left: 30px;
+
     font-size: 60px;
   }
 
@@ -96,16 +105,93 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    padding-left: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .instructions__item {
-    margin-right: 160px;
+    width: 354px;
+    min-height: 300px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 16px;
+    padding-top: 185px;
+  }
+
+  .instructions__item::before {
+    top: 72px;
+    left: 0;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  .instructions__item::after {
+    top: 87px;
+    left: 13px;
+  }
+
+  .instructions__item--meal::before {
+    top: 73px;
+  }
+
+  .instructions__item--result::before {
+    top: 73px;
   }
 
   .instructions__text {
+    width: 245px;
+    margin: 0;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .instructions__text::before {
+    position: absolute;
+    z-index: -1;
+
+    font-size: 281px;
+    font-weight: 400;
+    line-height: 281px;
+    font-family: @font-family;
+    color: @block-background-color;
+  }
+
+  .instructions__text--structure::before {
+    content: "1";
+    top: 32px;
+    left: 118px;
+
+    width: 71px;
+    height: 228px;
+  }
+  .instructions__text--form::before {
+    content: "2";
+    top: 33px;
+    left: 111px;
+
+    width: 114px;
+    height: 230px;
+  }
+
+  .instructions__text--meal::before {
+    content: "3";
+    top: 33px;
+    left: 111px;
+
+    width: 113px;
+    height: 233px;
+  }
+
+  .instructions__text--result::before {
+    content: "4";
+    top: 33px;
+    left: 111px;
+
+    width: 121px;
+    height: 228px;
   }
 }
 

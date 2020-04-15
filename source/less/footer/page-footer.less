@@ -22,6 +22,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
   color: @color-title;
 }
 
@@ -29,6 +31,7 @@
   font-size: 14px;
   line-height: 20px;
   font-family: @font;
+  text-align: right;
   color: @color-text;
 }
 
@@ -73,31 +76,42 @@
 .page-footer__social-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
+  min-height: 64px;
   margin: 0 20px;
   padding: 0;
-  min-height: 62px;
+  padding-top: 19px;
+  padding-left: 74px;
+  padding-right: 71px;
+
+  box-sizing: border-box;
 
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
 
 .page-footer__social-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
   list-style: none;
 }
 
 .page-footer__social-item--vkontakte {
-  margin-left: 73px;
+  width: 22px;
+  height: 12px;
 }
 
 .page-footer__social-item--instagram {
-  margin-top: 5px;
+  width: 17px;
+  height: 17px;
+  margin-top: 3px;
 }
 
 .page-footer__social-item--facebook {
-  margin-top: 6px;
-  margin-right: 82px;
+  width: 10px;
+  height: 19px;
+  margin-top: 3px;
   margin-left: 3px;
 }
 
@@ -107,8 +121,8 @@
   align-items: top;
 
   min-height: 78px;
-  padding-left: 19px;
-  padding-right: 13px;
+  padding-left: 20px;
+  padding-right: 12px;
 }
 
 .page-footer__copyright-text {
@@ -129,8 +143,29 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer__map-body {
+  /*  V */
+  .page-footer__block {
+    height: 201px;
+  }
+
+  .page-footer__text {
+    width: 154px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-footer__address {
+    font-size: 16px;
+  }
+
+  .page-footer__map {
+    width: 768px;
     height: 400px;
+
+    background-image: url("../img/bg-map-tablet.png");
+    background-position: left;
+    background-repeat: no-repeat;
   }
 
   .page-footer__wrapper {
@@ -138,7 +173,52 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 30px;
+    margin: 0;
+    padding: 33px 23px 37px 30px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+
+  .page-footer__social-list {
+    min-width: 128px;
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    padding-top: 16px;
+
+    border: none;
+  }
+
+  .page-footer__social-item--vkontakte {
+    width: 30px;
+    height: 16px;
+    margin: 0;
+    margin-top: 3px;
+    margin-left: 1px;
+  }
+
+  .page-footer__social-item--instagram {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  .page-footer__social-item--facebook {
+    width: 14px;
+    height: 28px;
+    margin: 0;
+    margin-right: 3px;
+  }
+
+  .page-footer__copyright {
+    width: 170px;
+    margin: 0;
+    padding: 0;
   }
 }
 
