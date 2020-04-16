@@ -8,4 +8,3 @@ button.addEventListener("click", function(evt) {
   button.classList.toggle("header-nav__menu");
   mainNav.classList.toggle("page-header__main-nav--close");
 });
-
