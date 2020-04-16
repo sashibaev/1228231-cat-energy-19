@@ -67,10 +67,15 @@
   width: 128px;
   height: 24px;
   margin: 39px auto 31px;
+}
 
-  background-image: url("../img/logo-footer.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+.page-footer__logo:hover,
+.page-footer__logo:focus {
+  opacity: 80%;
+}
+
+.page-footer__logo:active {
+  opacity: 60%;
 }
 
 .page-footer__social-list {
@@ -95,6 +100,15 @@
   margin-right: 10px;
   margin-bottom: 10px;
   list-style: none;
+}
+
+.page-footer__social-item:hover path,
+.page-footer__social-item:focus path {
+  fill: @footer-button-hover;
+}
+
+.page-footer__social-item:active path {
+  fill: @footer-button-active;
 }
 
 .page-footer__social-item--vkontakte {
@@ -136,10 +150,23 @@
   color: @color-text;
 }
 
+.page-footer__copyright-link:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .page-footer__copyright-picture {
   margin: 0;
   padding: 0;
   margin-top: 13px;
+}
+
+.page-footer__copyright-picture:hover path,
+.page-footer__copyright-picture:focus path {
+  fill: @footer-button-hover;
+}
+
+.page-footer__copyright-picture:active path {
+  fill: @footer-button-active;
 }
 
 @media (min-width: @tablet-width) {

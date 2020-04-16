@@ -24,6 +24,15 @@
   color: @link-color-text;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.main-nav__link:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     width: 440px;
@@ -79,5 +88,16 @@
 
   .main-nav__index-nav {
     color: @light-color-text;
+  }
+
+  .main-nav__index-nav:hover,
+  .main-nav__index-nav:focus {
+    color: @light-color-text;
+    opacity: 60%;
+  }
+
+  .main-nav__index-nav:active {
+    color: @light-color-text;
+    opacity: 30%;
   }
 }

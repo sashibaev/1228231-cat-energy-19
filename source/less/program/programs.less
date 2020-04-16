@@ -69,6 +69,15 @@
   background-color: @button-background-color;
 }
 
+.programs__button:hover,
+.programs__button:focus {
+  background-color: @button-background-hover;
+}
+
+.programs__button:active {
+  color: @color-text-active;
+}
+
 .programs__list {
   margin: 0;
   margin-top: 22px;
@@ -186,6 +195,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @link-color-text;
+}
+
+.programs__link:active {
+  color: rgba(17, 17, 17, 0.3);
 }
 
 .programs__link::before {
