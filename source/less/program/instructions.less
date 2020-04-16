@@ -81,6 +81,7 @@
 
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   font-family: @font;
   color: @color-text;
 }
@@ -112,10 +113,9 @@
 
   .instructions__item {
     width: 354px;
-    min-height: 300px;
     margin: 0;
     margin-left: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 59px;
     padding-top: 185px;
   }
 
@@ -167,6 +167,7 @@
     width: 71px;
     height: 228px;
   }
+
   .instructions__text--form::before {
     content: "2";
     top: 33px;
@@ -196,11 +197,61 @@
 }
 
 @media (min-width: @desktop-width) {
+  .instructions {
+    width: 1300px;
+    margin: 0;
+    padding: 0;
+    padding-left: 39px;
+  }
+
+  .instructions__header {
+    margin: 0;
+    margin-left: 1px;
+    margin-bottom: 184px;
+  }
+
   .instructions__list {
-    padding: 0 110px;
+    margin-bottom: 125px;
   }
 
   .instructions__item {
-    margin-right: 30px;
+    width: 250px;
+    margin: 0;
+    margin-right: 75px;
+    padding: 0;
+  }
+
+  .instructions__item::before {
+    top: -112px;
+    left: 1px;
+  }
+
+  .instructions__item::after {
+    top: -97px;
+    left: 16px;
+  }
+
+  .instructions__text--structure::before {
+    content: "1";
+    top: -153px;
+    left: 119px;
+  }
+
+  .instructions__text--form::before {
+    content: "2";
+    top: -151px;
+    left: 112px;
+  }
+
+  .instructions__text--meal::before {
+    content: "3";
+    top: -151px;
+    left: 114px;
+  }
+
+  .instructions__text--result::before {
+    content: "4";
+    top: -152px;
+    left: 114px;
   }
 }

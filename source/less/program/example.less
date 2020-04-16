@@ -118,11 +118,57 @@
 
 @media (min-width: @desktop-width) {
   .example {
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    padding-bottom: 75px;
+    padding-left: 40px;
+
+    background-color: #ffffff;
+  }
+
+  .example__text-wrapper {
+    /*Временно для верстки*/
+    height: 460px;
+    padding-top: 72px;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+
+  .example__text {
+    width: 435px;
   }
 
   .example__list-wrapper {
     display: block;
+  }
+
+  .example__cat-wrapper {
+    position: relative;
+  }
+
+  .example__cat {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    /*Временно*/
+    top: -200px;
+    left: -500px;
+
+    width: 730px;
+    height: 499px;
   }
 }

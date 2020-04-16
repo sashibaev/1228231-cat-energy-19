@@ -1,4 +1,5 @@
 .additional-goods {
+  /*Временно*/
   height: 946px;
   padding: 0 20px;
 }
@@ -79,9 +80,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-goods {
+    /*Временно*/
+    height: 500px;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+
+  .additional-goods__title {
+    margin-bottom: 80px;
+    margin-left: 39px;
+  }
+
   .additional-goods__wrapper {
     display: flex;
     justify-content: space-between;
+
+    padding: 0 40px;
+  }
+
+  .additional-goods__list {
+    min-width: 895px;
+    margin: 0;
+
+    border: none;
+    border-top: 1px solid @border-color;
   }
 
   .additional-goods__item {
