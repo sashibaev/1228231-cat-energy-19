@@ -20,6 +20,11 @@ li {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,16 +34,4 @@ li {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: @tablet-width) {
-  body {
-    min-width: @tablet-width;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: @desktop-width;
-  }
 }
