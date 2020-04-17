@@ -27,7 +27,23 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    max-width: 100%;
+    margin-bottom: 70px;
     padding-left: 20px;
-    padding-right: 23px;
+    padding-right: 20px;
+  }
+
+  .page-header__index {
+    max-width: 100%;
+    height: 696px;
+    margin-bottom: 80px;
+
+    background-image:
+      url("../img/index-background-desktop.jpg"),
+      linear-gradient(to right, #ffffff 50%, @button-background-color 50%);
+
+    background-position: 649px 0, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 720px 696px, 100% 696px;
   }
 }

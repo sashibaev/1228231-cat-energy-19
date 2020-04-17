@@ -407,6 +407,11 @@
   }
 
   .programs__wrapper {
+    position: absolute;
+    content: "'";
+    z-index: 1;
+    top: -664px;
+
     margin: 0;
     margin-top: 110px;
     margin-left: 120px;
@@ -424,7 +429,7 @@
   }
 
   .programs__image-wrapper {
-    top: -80px;
+    top: -634px;
     left: 50%;
     transform: translate(-27.5%);
     z-index: 1;
@@ -439,9 +444,11 @@
   }
 
   .programs__button-text {
-    margin: 0;
-    margin-left: 120px;
-    margin-bottom: 268px;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: -320px;
+    left: 31px;
   }
 
   .programs__button {
@@ -454,7 +461,7 @@
 
     margin: 0;
     margin-bottom: 73px;
-    padding: 0 22px 0 40px;
+    padding: 0 23px 0 40px;
   }
 
   .programs__item {
