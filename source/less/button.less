@@ -3,11 +3,22 @@
   vertical-align: top;
   width: 280px;
   min-height: 40px;
+  box-sizing: border-box;
 
+  text-align: center;
   text-transform: uppercase;
   color: @button-color-text;
 
   background-color: @button-background-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: @button-background-hover;
+}
+
+.button:active {
+  color: @color-text-active;
 }
 
 @media (min-width: @tablet-width) {

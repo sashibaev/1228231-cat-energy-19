@@ -1,4 +1,15 @@
+.instructions {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 17px;
+}
+
 .instructions__header {
+  max-width: 100%;
+  margin: 0;
+  margin-left: 20px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -8,51 +19,242 @@
 .instructions__list {
   margin: 0;
   padding: 0;
-  border: 0;
+  padding-top: 4px;
+  padding-bottom: 46px;
 }
 
 .instructions__item {
+  position: relative;
+
+  margin-top: 26px;
+
   list-style: none;
+}
+
+.instructions__item::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: -2px;
+  left: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #68b738;
+}
+
+.instructions__item::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+
+  top: 3px;
+  left: 25px;
+
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.instructions__item--structure::after {
+  background-image: url("../img/advantage-leaf.png");
+}
+
+.instructions__item--form::after {
+  background-image: url("../img/advantage-powder.png");
+}
+
+.instructions__item--meal::after {
+  background-image: url("../img/advantage-dining.png");
+}
+
+.instructions__item--result::after {
+  background-image: url("../img/advantage-clock.png");
 }
 
 .instructions__text {
   width: 200px;
+  margin: 0;
+  margin-left: 100px;
 
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   font-family: @font;
   color: @color-text;
 }
 
 @media (min-width: @tablet-width) {
+  .instructions {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
   .instructions__header {
+    margin: 0;
+    margin-left: 30px;
+
     font-size: 60px;
   }
 
   .instructions__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
 
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     padding-left: 30px;
+    padding-right: 87px;
   }
 
   .instructions__item {
-    margin-right: 160px;
+    width: 250px;
+    margin: 0;
+    margin-bottom: 59px;
+    padding-top: 185px;
+  }
+
+  .instructions__item::before {
+    top: 72px;
+    left: 0;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  .instructions__item::after {
+    top: 87px;
+    left: 13px;
+  }
+
+  .instructions__item--meal::before {
+    top: 73px;
+  }
+
+  .instructions__item--result::before {
+    top: 73px;
   }
 
   .instructions__text {
+    width: 245px;
+    margin: 0;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .instructions__text::before {
+    position: absolute;
+    z-index: -1;
+
+    font-size: 281px;
+    font-weight: 400;
+    line-height: 281px;
+    font-family: @font-family;
+    color: @block-background-color;
+  }
+
+  .instructions__text--structure::before {
+    content: "1";
+    top: 32px;
+    left: 118px;
+
+    width: 71px;
+    height: 228px;
+  }
+
+  .instructions__text--form::before {
+    content: "2";
+    top: 33px;
+    left: 111px;
+
+    width: 114px;
+    height: 230px;
+  }
+
+  .instructions__text--meal::before {
+    content: "3";
+    top: 33px;
+    left: 111px;
+
+    width: 113px;
+    height: 233px;
+  }
+
+  .instructions__text--result::before {
+    content: "4";
+    top: 33px;
+    left: 111px;
+
+    width: 121px;
+    height: 228px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .instructions {
+    margin: 0;
+    padding: 0;
+  }
+
+  .instructions__header {
+    margin: 0;
+    margin-left: 40px;
+    margin-bottom: 184px;
+  }
+
   .instructions__list {
-    padding: 0 110px;
+    justify-content: space-between;
+
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 19px;
+    margin-bottom: 125px;
   }
 
   .instructions__item {
-    margin-right: 30px;
+    width: 250px;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .instructions__item::before {
+    top: -112px;
+    left: 1px;
+  }
+
+  .instructions__item::after {
+    top: -97px;
+    left: 16px;
+  }
+
+  .instructions__text--structure::before {
+    content: "1";
+    top: -153px;
+    left: 119px;
+  }
+
+  .instructions__text--form::before {
+    content: "2";
+    top: -151px;
+    left: 112px;
+  }
+
+  .instructions__text--meal::before {
+    content: "3";
+    top: -151px;
+    left: 114px;
+  }
+
+  .instructions__text--result::before {
+    content: "4";
+    top: -152px;
+    left: 114px;
   }
 }

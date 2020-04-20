@@ -1,12 +1,16 @@
 .example {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 17px 20px 60px;
+  box-sizing: border-box;
 
   background-color: @block-background-color;
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 23px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -14,6 +18,9 @@
 }
 
 .example__text {
+  width: 266px;
+  margin: 0;
+
   font-size: 14px;
   line-height: 18px;
   font-family: @font;
@@ -37,6 +44,8 @@
 }
 
 .example__description {
+  width: 57px;
+
   font-size: 12px;
   line-height: 12px;
   font-family: @font;
@@ -54,6 +63,8 @@
 }
 
 .example__cat {
+  margin: 0;
+
   text-align: center;
 }
 
@@ -71,19 +82,98 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    padding: 0;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-bottom: 102px;
+  }
+
+  .example__title {
+    margin-bottom: 64px;
+
+    font-size: 60px;
+  }
+
+  .example__text {
+    width: 680px;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 40px;
+  }
+
+  .example__cat-image {
+    width: 676px;
+    height: 499px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    padding-bottom: 75px;
+    padding-left: 40px;
+
+    background-color: #ffffff;
+  }
+
+  .example__text-wrapper {
+    /*Временно для верстки*/
+    height: 460px;
+    padding-top: 72px;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+
+  .example__text {
+    width: 435px;
   }
 
   .example__list-wrapper {
     display: block;
+  }
+
+  .example__cat-wrapper {
+    position: relative;
+  }
+
+  .example__cat {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    /*Временно*/
+    top: -200px;
+    left: -500px;
+
+    width: 530px;
+    height: 499px;
+  }
+
+  .example__cat-image {
+    max-width: 100%;
+    height: auto;
   }
 }

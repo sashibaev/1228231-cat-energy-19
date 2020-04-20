@@ -1,4 +1,6 @@
 .additional-goods {
+  /*Временно*/
+  height: 946px;
   padding: 0 20px;
 }
 
@@ -40,13 +42,37 @@
 }
 
 @media (min-width: @tablet-width) {
+  .additional-goods {
+    padding: 0;
+    padding-top: 37px;
+    padding-bottom: 102px;
+  }
+
+  .additional-goods__title {
+    margin-bottom: 80px;
+    margin-left: 67px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-goods__list {
+    min-width: 708px;
+    margin: 0 30px 70px;
+
+    border: 1px solid @border-color;
+    border-bottom: none;
+  }
+
   .additional-goods__item {
-    padding: 0 37px 0 38px;
+    padding: 25px 37px 27px 38px;
+    border-bottom: 1px solid @border-color;
   }
 
   .additional-goods__text {
-    width: 100%;
+    width: 708px;
     height: 200px;
+    margin: 0 auto;
 
     background-image: url("../img/gift-photo-tablet.jpg");
     background-size: 708px 200px;
@@ -54,9 +80,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-goods {
+    /*Временно*/
+    height: 500px;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+
+  .additional-goods__title {
+    margin-bottom: 80px;
+    margin-left: 39px;
+  }
+
   .additional-goods__wrapper {
     display: flex;
     justify-content: space-between;
+
+    padding: 0 40px;
+  }
+
+  .additional-goods__list {
+    min-width: 895px;
+    margin: 0;
+
+    border: none;
+    border-top: 1px solid @border-color;
   }
 
   .additional-goods__item {

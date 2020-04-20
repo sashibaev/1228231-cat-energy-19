@@ -3,7 +3,14 @@
   padding: 0;
 }
 
+.page-main__catalog {
+  margin: 0;
+  padding: 0;
+}
+
 .page-main__header {
+  margin: 15px 0 28px 20px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -11,8 +18,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-main__catalog {
+    border: none;
+  }
+
   .page-main__header {
+    margin: 41px 0 0 30px;
+
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__header {
+    margin: 75px 0 0 40px;
   }
 }
