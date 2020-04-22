@@ -12,6 +12,7 @@
   align-items: center;
 
   min-height: 114px;
+  padding: 0 24px 0 19px;
 }
 
 .page-footer__company {
@@ -19,6 +20,8 @@
 }
 
 .page-footer__text {
+  width: 130px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -28,22 +31,33 @@
 }
 
 .page-footer__address {
+  width: 135px;
+
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
+  font-weight: normal;
   font-family: @font;
-  text-align: right;
+  text-align: left;
   color: @color-text;
+}
+
+.page-footer__address-wrapper {
+  margin: 0;
 }
 
 .page-footer__map {
   position: relative;
 
-  max-width: 320px;
+  max-width: 100%;
   height: 362px;
+  margin: 0 auto;
+  padding: 0;
 
   background-image: url("../img/bg-map-mobile.png");
   background-position: 0 -38px;
   background-repeat: no-repeat;
+  background-size: 320px 400px;
 }
 
 .page-footer__map::before {
@@ -51,16 +65,21 @@
   content: "";
   z-index: 1;
 
-  width: 55px;
-  height: 53px;
-  top: 138px;
+  width: 124px;
+  height: 106px;
+  top: 24%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, 50%);
 
   background-image: url("../img/map-pin.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 55px auto;
+}
+
+.page-footer__map-body {
+  position: relative;
+  z-index: 2;
 }
 
 .page-footer__logo {
@@ -87,8 +106,8 @@
   margin: 0 20px;
   padding: 0;
   padding-top: 19px;
-  padding-left: 74px;
-  padding-right: 71px;
+  padding-left: 73px;
+  padding-right: 72px;
 
   box-sizing: border-box;
 
@@ -135,8 +154,8 @@
   align-items: flex-start;
 
   min-height: 78px;
-  padding-left: 20px;
-  padding-right: 12px;
+  padding-left: 19px;
+  padding-right: 13px;
 }
 
 .page-footer__copyright-text {
@@ -172,27 +191,44 @@
 @media (min-width: @tablet-width) {
   /*  V */
   .page-footer__block {
-    height: 201px;
+    align-items: flex-start;
+
+    min-height: 201px;
+    padding: 0 71px 0 71px;
   }
 
   .page-footer__text {
     width: 154px;
+    margin-top: 65px;
 
     font-size: 20px;
     line-height: 25px;
   }
 
   .page-footer__address {
+    width: 160px;
+    margin-top: 63px;
+
     font-size: 16px;
+    text-align: right;
+  }
+
+  .page-footer__address-item {
+    margin-bottom: 20px;
   }
 
   .page-footer__map {
-    width: 768px;
     height: 400px;
 
     background-image: url("../img/bg-map-tablet.png");
     background-position: left;
-    background-repeat: no-repeat;
+    background-size: 768px 400px;
+  }
+
+  .page-footer__map::before {
+    top: 24%;
+
+    background-size: 113px auto;
   }
 
   .page-footer__wrapper {
@@ -201,7 +237,7 @@
     align-items: center;
 
     margin: 0;
-    padding: 33px 6px 37px 31px;
+    padding: 33px 24px 37px 31px;
   }
 
   .page-footer__logo {

@@ -1,7 +1,32 @@
+.questionnaire {
+  padding-top: 12px;
+}
+
 .questionnaire__text {
+  margin-right: 74px;
+  margin-left: 20px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   color: @color-title;
+}
+
+.questionnaire__form {
+  padding-bottom: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .questionnaire__text {
+    margin-left: 70px;
+    margin-right: 370px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .questionnaire__form {
+    padding-bottom: 72px;
+  }
 }

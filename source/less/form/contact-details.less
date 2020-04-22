@@ -1,3 +1,137 @@
+.contact-details {
+  position: relative;
+
+  margin-top: 42px;
+  padding: 0;
+  padding-bottom: 42px;
+
+  border-top: 3px solid @border-color-decor;
+}
+
+.contact-details__text {
+  width: 190px;
+}
+
+.contact-details__legend {
+  top: -40px;
+  left: 0;
+
+  padding-right: 12px;
+  padding-left: 17px;
+}
+
+.contact-details__wrapper {
+  padding-top: 64px;
+  padding-left: 17px;
+}
+
+.contact-details__email {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.contact-details__email-label {
+  margin-right: 9px;
+}
+
+.contact-details__email-input {
+  width: 219px;
+}
+
+.contact-details__icon-mail {
+  position: absolute;
+  top: 17px;
+  right: 33px;
+  z-index: 1;
+
+  width: 18px;
+  height: 14px;
+}
+
+.contact-details__phone {
+  position: relative;
+
+  margin: 0;
+}
+
+.contact-details__phone-label {
+  margin-right: 6px;
+}
+
+.contact-details__phone-input {
+  width: 205px;
+}
+
+.contact-details__icon-phone {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  z-index: 1;
+
+  width: 21px;
+  height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-details {
+    padding-bottom: 88px;
+  }
+
+  .contact-details__text {
+    width: auto;
+  }
+
+  .contact-details__legend {
+    top: -60px;
+    left: 29px;
+
+    padding-right: 42px;
+    padding-left: 38px;
+  }
+
+  .contact-details__wrapper {
+    padding-top: 85px;
+    padding-left: 66px;
+  }
+
+  .contact-details__email {
+    margin-bottom: 17px;
+    margin-left: 3px;
+  }
+
+  .contact-details__email-label {
+    margin-right: 14px;
+  }
+
+  .contact-details__email-input {
+    width: 551px;
+  }
+
+  .contact-details__icon-mail {
+    top: 22px;
+    right: 83px;
+  }
+
+  .contact-details__phone {
+    margin: 0;
+  }
+
+  .contact-details__phone-label {
+    margin-right: 11px;
+  }
+
+  .contact-details__phone-input {
+    width: 535px;
+  }
+
+  .contact-details__icon-phone {
+    top: 20px;
+    right: 80px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .contact-details__wrapper {
     display: flex;
