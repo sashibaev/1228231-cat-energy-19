@@ -221,7 +221,7 @@
     height: 400px;
 
     background-image: url("../img/bg-map-tablet.png");
-    background-position: left;
+    background-position: 0 0;
     background-size: 768px 400px;
   }
 
@@ -231,11 +231,16 @@
     background-size: 113px auto;
   }
 
+  .page-footer__map-body {
+    height: 400px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    max-width: 100%;
     margin: 0;
     padding: 33px 24px 37px 31px;
   }
@@ -296,24 +301,37 @@
 @media (min-width: @desktop-width) {
   .page-footer__block {
     position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: 110px;
+    z-index: 3;
+    top: 95px;
+    left: 40px;
 
     width: 570px;
+    padding: 0 86px 0 76px;
+    box-sizing: border-box;
 
     background-color: @background-color;
   }
 
+  .page-footer__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-footer__address {
+    text-align: left;
+  }
+
   .page-footer__map {
-    width: 1440px;
+    max-width: 100%;
 
     background-image: url("../img/bg-map-desktop.png");
     background-size: 1300px 400px;
   }
 
   .page-footer__wrapper {
-    padding: 38px 15px 31px 40px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 35px 33px 35px 40px;
     box-sizing: border-box;
   }
 
@@ -326,7 +344,7 @@
     min-width: 125px;
     margin: 0;
     padding: 0;
-    padding-top: 16px;
+    padding-top: 17px;
   }
 
   .page-footer__social-item--vkontakte {
@@ -353,6 +371,6 @@
   }
 
   .page-footer__copyright {
-    margin-top: 1px;
+    padding-top: 2px;
   }
 }

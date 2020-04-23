@@ -1,23 +1,24 @@
 .additional-goods {
   position: relative;
 
-  padding-top: 42px;
+  max-width: 100%;
+  margin-top: 42px;
+
+  border-top: 3px solid @border-color-decor;
 }
 
 .additional-goods__wrapper {
   padding-top: 40px;
-
-  border-top: 3px solid @border-color-decor;
 }
 
 .additional-goods__title {
   position: absolute;
   content: "";
   z-index: 1;
-  top: 28px;
+  top: -17px;
 
   margin: 0;
-  padding: 0 24px 0 19px;
+  padding: 0 24px 0 18px;
 
   font-size: 24px;
   font-weight: 400;
@@ -50,7 +51,7 @@
   position: relative;
 
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   margin: 40px auto 35px;
   padding-top: 187px;
   box-sizing: border-box;
@@ -93,7 +94,7 @@
 @media (min-width: @tablet-width) {
   .additional-goods {
     padding: 0;
-    padding-top: 89px;
+    margin-top: 89px;
     padding-bottom: 75px;
   }
 
@@ -102,7 +103,7 @@
   }
 
   .additional-goods__title {
-    top: 67px;
+    top: -25px;
     left: 28px;
 
     padding-right: 36px;
@@ -122,12 +123,13 @@
 
   .additional-goods__item {
     padding: 25px 38px 26px 37px;
+    border: none;
     border-bottom: 1px solid @border-color;
   }
 
   .additional-goods__text {
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     margin: 0 auto;
     padding-top: 72px;
 
@@ -149,28 +151,29 @@
 
 @media (min-width: @desktop-width) {
   .additional-goods {
-    /*Временно*/
-    height: 500px;
+    max-width: 100%;
     padding: 0;
-    padding-top: 45px;
-    padding-bottom: 20px;
+    margin-top: 97px;
+    padding-bottom: 86px;
   }
 
   .additional-goods__title {
-    margin-bottom: 80px;
-    margin-left: 39px;
+    top: -25px;
+    left: 0;
   }
 
   .additional-goods__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 
-    padding: 0 40px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 91px 0 0 41px;
   }
 
   .additional-goods__list {
-    min-width: 895px;
     margin: 0;
+    margin-right: 80px;
 
     border: none;
     border-top: 1px solid @border-color;
@@ -179,14 +182,28 @@
   .additional-goods__item {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    align-items: flex-start;
+
+    width: 894px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
   }
 
   .additional-goods__text {
     width: 245px;
-    min-height: 289px;
+    margin: 0;
+    padding: 0;
 
     background-image: url("../img/gift-photo-desktop.jpg");
     background-size: 245px 289px;
+  }
+
+  .additional-goods__text-content {
+    margin: 188px auto 0;
+
+    text-align: center;
   }
 }
