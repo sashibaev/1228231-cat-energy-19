@@ -1,10 +1,15 @@
 .additionally {
+  max-width: 100%;
+}
+
+.additionally__header--wrapper {
   position: relative;
 }
 
-.additionally__legend {
-  top: -16px;
+.additionally__header {
+  top: -17px;
 
+  margin: 0;
   padding-right: 24px;
   padding-left: 18px;
 }
@@ -86,7 +91,7 @@
     height: 16px;
   }
 
-  .additionally__legend {
+  .additionally__header {
     top: -25px;
     left: 30px;
 
@@ -96,6 +101,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additionally__header--wrapper {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .additionally__list {
     justify-content: space-between;
 
@@ -103,7 +113,7 @@
     padding-right: 17px;
   }
 
-  .additionally__legend {
+  .additionally__header {
     left: 0;
 
     padding-right: 42px;

@@ -38,9 +38,13 @@
     </header>
 
     <main class="page-main__form">
-      <h1 class="page-main__header--form">Подбор программы</h1>
+      <div class="page-main__header-form--wrapper">
+        <h1 class="page-main__header--form">Подбор программы</h1>
+      </div>
       <section class="questionnaire">
-        <h2 class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        <div class="questionnaire__text--wrapper">
+          <h2 class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        </div>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__cat">
             <div class="form__cat-wrapper">
@@ -72,8 +76,10 @@
               </li>
             </ul>
           </div>
-          <fieldset class="form__contact-details contact-details">
-            <legend class="form__legend contact-details__legend"><p class="contact-details__text">Контактные данные (владельца кота)</p></legend>
+          <div class="form__contact-details contact-details">
+            <div class="contact-details__header--wrapper">
+              <p class="form__header contact-details__header">Контактные данные (владельца кота)</p>
+            </div>
             <div class="contact-details__wrapper">
               <p class="contact-details__email">
                 <label class="form__label contact-details__email-label" for="email">E-mail:*</label>
@@ -86,7 +92,7 @@
               </p>
               <p class="contact-details__phone">
                 <label class="form__label contact-details__phone-label" for="phone">Телефон:*</label>
-                <input class="form__input contact-details__phone-input" type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input contact-details__phone-input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
                 <button class="contact-details__phone-button" type="button" aria-label="Иконка 'Позвонить по телефону'">
                   <svg class="contact-details__icon-phone" version="1.1" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background: new 0 0 20 20;" xml:space="preserve">
                     <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
@@ -99,32 +105,36 @@
                 </button>
               </p>
             </div>
-          </fieldset>
-          <fieldset class="form__comment">
-            <legend class="form__legend form__comment-legend"><p class="form__comment-text">Комментарий</p></legend>
-            <textarea class="form__input form__comment-input" name="comments" rows="7" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="form__additionally additionally">
-            <legend class="form__legend additionally__legend"><p class="form__additionally-text">Дополнительно</p></legend>
-            <ul class="form__additionally-list additionally__list">
-              <li class="form__additionally-item additionally__item">
-                <input class="additionally__item-input visually-hidden" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
-                <label class="form__label additionally__item-label" for="sugar-substitute">Сахарозаменитель</label>
-              </li>
-              <li class="form__additionally-item additionally__item">
-                <input class="additionally__item-input visually-hidden" type="checkbox" name="drinking-water" id="drinking-water">
-                <label class="form__label additionally__item-label" for="drinking-water">Питьевая вода</label>
-              </li>
-              <li class="form__additionally-item additionally__item">
-                <input class="additionally__item-input visually-hidden" type="checkbox" name="milk" id="milk">
-                <label class="form__label additionally__item-label" for="milk">Молоко</label>
-              </li>
-              <li class="form__additionally-item additionally__item">
-                <input class="additionally__item-input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                <label class="form__label additionally__item-label" for="vitamins">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
+          </div>
+          <div class="form__comment">
+            <div class="form__comment-header--wrapper">
+              <p class="form__header form__comment-header">Комментарий</p>
+              <textarea class="form__input form__comment-input" name="comments" rows="7" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+          <div class="form__additionally additionally">
+            <div class="additionally__header--wrapper">
+              <p class="form__header additionally__header">Дополнительно</p>
+              <ul class="form__additionally-list additionally__list">
+                <li class="form__additionally-item additionally__item">
+                  <input class="additionally__item-input visually-hidden" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+                  <label class="form__label additionally__item-label" for="sugar-substitute">Сахарозаменитель</label>
+                </li>
+                <li class="form__additionally-item additionally__item">
+                  <input class="additionally__item-input visually-hidden" type="checkbox" name="drinking-water" id="drinking-water">
+                  <label class="form__label additionally__item-label" for="drinking-water">Питьевая вода</label>
+                </li>
+                <li class="form__additionally-item additionally__item">
+                  <input class="additionally__item-input visually-hidden" type="checkbox" name="milk" id="milk">
+                  <label class="form__label additionally__item-label" for="milk">Молоко</label>
+                </li>
+                <li class="form__additionally-item additionally__item">
+                  <input class="additionally__item-input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="form__label additionally__item-label" for="vitamins">Витамины</label>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="form__button-wrapper">
             <button class="button form__button" type="submit">Отправить заявку</button>
             <p class="form__text">* — Обязательные поля</p>

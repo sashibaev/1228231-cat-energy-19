@@ -1,6 +1,4 @@
 .additional-goods {
-  position: relative;
-
   max-width: 100%;
   margin-top: 42px;
 
@@ -11,6 +9,10 @@
   padding-top: 40px;
 }
 
+.additional-goods__title--wrapper {
+  position: relative;
+}
+
 .additional-goods__title {
   position: absolute;
   content: "";
@@ -18,7 +20,7 @@
   top: -17px;
 
   margin: 0;
-  padding: 0 24px 0 18px;
+  padding: 0 23px 0 19px;
 
   font-size: 24px;
   font-weight: 400;
@@ -122,7 +124,7 @@
   }
 
   .additional-goods__item {
-    padding: 25px 38px 26px 37px;
+    padding: 26px 38px 26px 37px;
     border: none;
     border-bottom: 1px solid @border-color;
   }
@@ -155,6 +157,11 @@
     padding: 0;
     margin-top: 97px;
     padding-bottom: 86px;
+  }
+
+  .additional-goods__title--wrapper {
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .additional-goods__title {
@@ -199,6 +206,10 @@
 
     background-image: url("../img/gift-photo-desktop.jpg");
     background-size: 245px 289px;
+  }
+
+  .additional-goods__text::before {
+    left: 123px;
   }
 
   .additional-goods__text-content {

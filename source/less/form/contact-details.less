@@ -1,6 +1,4 @@
 .contact-details {
-  position: relative;
-
   margin-top: 42px;
   padding: 0;
   padding-bottom: 42px;
@@ -8,21 +6,22 @@
   border-top: 3px solid @border-color-decor;
 }
 
-.contact-details__text {
-  width: 190px;
+.contact-details__header--wrapper {
+  position: relative;
 }
 
-.contact-details__legend {
+.contact-details__header {
   top: -40px;
-  left: 0;
+  left: 1px;
 
+  width: 190px;
   padding-right: 12px;
-  padding-left: 17px;
+  padding-left: 18px;
 }
 
 .contact-details__wrapper {
   padding-top: 64px;
-  padding-left: 17px;
+  padding-left: 18px;
 }
 
 .contact-details__email {
@@ -47,7 +46,7 @@
 .contact-details__icon-mail {
   position: absolute;
   top: -13px;
-  right: 22px;
+  right: 21px;
   z-index: 1;
 
   width: 18px;
@@ -84,28 +83,25 @@
 
 @media (min-width: @tablet-width) {
   .contact-details {
-    padding-bottom: 88px;
+    padding-bottom: 87px;
   }
 
-  .contact-details__text {
+  .contact-details__header {
+    top: -61px;
+    left: 30px;
+
     width: auto;
-  }
-
-  .contact-details__legend {
-    top: -60px;
-    left: 29px;
-
     padding-right: 42px;
     padding-left: 38px;
   }
 
   .contact-details__wrapper {
     padding-top: 85px;
-    padding-left: 66px;
+    padding-left: 68px;
   }
 
   .contact-details__email {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
     margin-left: 3px;
   }
 
@@ -142,6 +138,7 @@
 
 @media (min-width: @desktop-width) {
   .contact-details {
+    max-width: 100%;
     padding-bottom: 72px;
   }
 
@@ -152,14 +149,19 @@
     width: 1300px;
     margin: 0 auto;
     padding-top: 86px;
-    padding-left: 36px;
-    padding-right: 34px;
+    padding-left: 38px;
+    padding-right: 33px;
     box-sizing: border-box;
   }
 
-  .contact-details__legend {
+  .contact-details__header--wrapper {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .contact-details__header {
     top: -61px;
-    left: -1px;
+    left: 1px;
   }
 
   .contact-details__email {
@@ -184,7 +186,7 @@
   }
 
   .contact-details__phone-label {
-    margin-right: 13px;
+    margin-right: 12px;
   }
 
   .contact-details__icon-phone {
