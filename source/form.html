@@ -48,18 +48,24 @@
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__cat">
             <div class="form__cat-wrapper">
-              <p class="form__name">
+              <div class="form__name">
                 <label class="form__label form__name-label" for="name">Имя:*</label>
-                <input class="form__input form__name-input" type="text" name="name" id="name" placeholder="Барсик" required>
-              </p>
-              <p class="form__weight">
+                <p class="form__input-wrapper">
+                  <input class="form__input form__name-input" type="text" name="name" id="name" placeholder="Барсик" required>
+                </p>
+              </div>
+              <div class="form__weight">
                 <label class="form__label form__weight-label" for="weight">Вес (кг):*</label>
-                <input class="form__input form__weight-input" type="number" name="weight" id="weight" placeholder="7" required>
-              </p>
-              <p class="form__age">
+                <p class="form__input-wrapper">
+                  <input class="form__input form__weight-input" type="number" name="weight" id="weight" placeholder="7" required>
+                </p>
+              </div>
+              <div class="form__age">
                 <label class="form__label form__age-label" for="age">Возраст (лет):</label>
-                <input class="form__input form__age-input" type="number" name="age" id="age" placeholder="7">
-              </p>
+                <p class="form__input-wrapper">
+                  <input class="form__input form__age-input" type="number" name="age" id="age" placeholder="7">
+                </p>
+              </div>
             </div>
             <ul class="form__list">
               <li class="form__item">
@@ -81,30 +87,36 @@
               <p class="form__header contact-details__header">Контактные данные (владельца кота)</p>
             </div>
             <div class="contact-details__wrapper">
-              <p class="contact-details__email">
+              <div class="contact-details__email">
                 <label class="form__label contact-details__email-label" for="email">E-mail:*</label>
-                <input class="form__input contact-details__email-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="contact-details__icon-email" version="1.1" id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14" viewBox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve">
-                  <path class="contact-details__icon-email--fill" fill="#222222" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
-                </svg>
-              </p>
-              <p class="contact-details__phone">
+                <p class="form__input-wrapper">
+                  <input class="form__input contact-details__email-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="contact-details__icon-email" version="1.1" id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14" viewBox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve">
+                    <path class="contact-details__icon-email--fill" fill="#222222" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                  </svg>
+                </p>
+              </div>
+              <div class="contact-details__phone">
                 <label class="form__label contact-details__phone-label" for="phone">Телефон:*</label>
-                <input class="form__input contact-details__phone-input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
-                <svg class="contact-details__icon-phone" version="1.1" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21" viewBox="0 0 20 20" style="enable-background: new 0 0 20 20;" xml:space="preserve">
-                  <path class="contact-details__icon-phone--fill" fill="#222222" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-                  <path class="contact-details__icon-phone--fill" fill="#222222" d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-                    c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-                    C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-                    C7.8,20,8.1,19.7,8.1,19.4z"/>
-                </svg>
-              </p>
+                <p class="form__input-wrapper">
+                  <input class="form__input contact-details__phone-input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="contact-details__icon-phone" version="1.1" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21" viewBox="0 0 20 20" style="enable-background: new 0 0 20 20;" xml:space="preserve">
+                    <path class="contact-details__icon-phone--fill" fill="#222222" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                    <path class="contact-details__icon-phone--fill" fill="#222222" d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                      c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                      C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                      C7.8,20,8.1,19.7,8.1,19.4z"/>
+                  </svg>
+                </p>
+              </div>
             </div>
           </div>
           <div class="form__comment">
             <div class="form__comment-header--wrapper">
               <p class="form__header form__comment-header">Комментарий</p>
-              <textarea class="form__input form__comment-input" name="comments" rows="7" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <div class="form__comment-input--wrapper">
+                <textarea class="form__input form__comment-input" name="comments" rows="7" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </div>
           <div class="form__additionally additionally">
