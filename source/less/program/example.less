@@ -299,7 +299,7 @@
   .example__cat-wrapper {
     position: relative;
 
-    width: 768px;
+    max-width: 100%;
     height: 462px;
 
     background-color: @background-color-cat;
@@ -414,6 +414,10 @@
     border-top: none;
   }
 
+  .example__background {
+    background-image: linear-gradient(to right, @link-background-color 50%, @background-color-cat 50%);
+  }
+
   .example__wrapper {
     display: flex;
     justify-content: space-between;
@@ -459,6 +463,10 @@
     justify-content: flex-start;
 
     margin-bottom: 36px;
+  }
+
+  .example__description-wrapper {
+    background-color: @link-background-color;
   }
 
   .example__item-weight {

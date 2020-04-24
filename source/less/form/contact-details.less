@@ -25,6 +25,9 @@
 }
 
 .contact-details__email {
+  position: relative;
+
+  width: 285px;
   margin: 0;
   margin-bottom: 13px;
 }
@@ -37,16 +40,14 @@
   width: 219px;
 }
 
-.contact-details__email-button {
-  position: relative;
-
-  padding: 0;
+.contact-details__email-input:active + .contact-details__icon-email .contact-details__icon-email--fill {
+  fill: @icon-fill-active;
 }
 
-.contact-details__icon-mail {
+.contact-details__icon-email {
   position: absolute;
-  top: -13px;
-  right: 21px;
+  top: 17px;
+  right: 18px;
   z-index: 1;
 
   width: 18px;
@@ -54,6 +55,9 @@
 }
 
 .contact-details__phone {
+  position: relative;
+
+  width: 285px;
   margin: 0;
 }
 
@@ -65,20 +69,22 @@
   width: 205px;
 }
 
-.contact-details__phone-button {
-  position: relative;
-
-  padding: 0;
+.contact-details__phone-input:active + .contact-details__icon-phone .contact-details__icon-phone--fill {
+  fill: @icon-fill-active;
 }
 
 .contact-details__icon-phone {
   position: absolute;
-  top: -16px;
-  right: 18px;
+  top: 14px;
+  right: 15px;
   z-index: 1;
 
   width: 21px;
   height: 21px;
+}
+
+.contact-details__icon-phone--fill:active {
+  fill: @icon-fill-active;
 }
 
 @media (min-width: @tablet-width) {
@@ -101,6 +107,7 @@
   }
 
   .contact-details__email {
+    width: 768px;
     margin-bottom: 18px;
     margin-left: 3px;
   }
@@ -113,12 +120,13 @@
     width: 551px;
   }
 
-  .contact-details__icon-mail {
-    top: -14px;
-    right: 26px;
+  .contact-details__icon-email {
+    top: 21px;
+    right: 156px;
   }
 
   .contact-details__phone {
+    width: 768px;
     margin: 0;
   }
 
@@ -131,8 +139,8 @@
   }
 
   .contact-details__icon-phone {
-    top: -16px;
-    right: 21px;
+    top: 19px;
+    right: 151px;
   }
 }
 
@@ -150,7 +158,7 @@
     margin: 0 auto;
     padding-top: 86px;
     padding-left: 38px;
-    padding-right: 33px;
+    padding-right: 40px;
     box-sizing: border-box;
   }
 
@@ -165,6 +173,7 @@
   }
 
   .contact-details__email {
+    width: auto;
     margin-bottom: 16px;
   }
 
@@ -176,9 +185,13 @@
     margin-right: 16px;
   }
 
-  .contact-details__icon-mail {
-    top: -15px;
-    right: 24px;
+  .contact-details__icon-email {
+    top: 21px;
+    right: 18px;
+  }
+
+  .contact-details__phone {
+    width: auto;
   }
 
   .contact-details__phone-input {
@@ -190,7 +203,7 @@
   }
 
   .contact-details__icon-phone {
-    top: -18px;
-    right: 24px;
+    top: 18px;
+    right: 18px;
   }
 }

@@ -28,17 +28,21 @@
 
 @media (min-width: @desktop-width) {
   .page-header__index {
+    position: relative;
     max-width: 100%;
     height: 696px;
     margin-bottom: 80px;
 
-    background-image:
-      url("../img/index-background-desktop.jpg"),
-      linear-gradient(to left, @button-background-color 50%, #ffffff 50%);
+    background-image: linear-gradient(to left, @button-background-color 50%, @background-color 50%);
+  }
 
-    background-position: 111.7% 0, 0 0;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 720px 696px, 100% 696px;
+  .page-header__index::before {
+    position: absolute;
+    content: url("../img/index-background-desktop.jpg");
+    right: 0;
+    width: 650px;
+
+    overflow: scroll;
   }
 
   .page-header__wrapper {
@@ -47,5 +51,9 @@
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
+  }
+
+  .page-header__main-nav {
+    z-index: 2;
   }
 }
