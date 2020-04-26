@@ -16,6 +16,11 @@
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .programs__header {

@@ -43,6 +43,10 @@
     width: 650px;
 
     overflow: hidden;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: url("img/index-background-desktop@2x.jpg");
+    }
   }
 
   .page-header__wrapper {
