@@ -1,6 +1,122 @@
+.additionally {
+  max-width: 100%;
+}
+
+.additionally__header--wrapper {
+  position: relative;
+}
+
+.additionally__header {
+  top: -17px;
+
+  margin: 0;
+  padding-right: 24px;
+  padding-left: 18px;
+}
+
+.additionally__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 44px;
+  padding-left: 66px;
+}
+
+.additionally__item-label {
+  position: relative;
+}
+
+.additionally__item-input + .additionally__item-label::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid @border-color;
+}
+
+.additionally__item-label:hover::before,
+.additionally__item-label:focus::before {
+  border-color: @button-color-border;
+}
+
+.additionally__item-label:active::before {
+  opacity: 0.3;
+}
+
+.additionally__item-input:checked + .additionally__item-label::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -42px;
+
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.additionally__item-label:active::after {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .additionally__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+
+    padding-top: 77px;
+    padding-left: 128px;
+    padding-right: 46px;
+  }
+
+  .additionally__item-input + .additionally__item-label::before {
+    top: -5px;
+    left: -59px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .additionally__item-input:checked + .additionally__item-label::after {
+    top: 8px;
+    left: -48px;
+
+    width: 21px;
+    height: 16px;
+  }
+
+  .additionally__header {
+    top: -25px;
+    left: 30px;
+
+    padding-right: 42px;
+    padding-left: 39px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__header--wrapper {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .additionally__list {
+    justify-content: space-between;
+
+    padding-left: 98px;
+    padding-right: 17px;
+  }
+
+  .additionally__header {
+    left: 0;
+
+    padding-right: 42px;
+    padding-left: 39px;
   }
 }

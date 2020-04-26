@@ -1,3 +1,8 @@
+.base-directory {
+  max-width: 100%;
+  margin: 0;
+}
+
 .base-directory__list {
   margin: 0;
   padding: 0;
@@ -7,18 +12,13 @@
 .base-directory__item {
   position: relative;
 
-  width: 320px;
   min-height: 209px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 19px;
 
   list-style: none;
 
   border-bottom: 1px solid @border-color-catalog;
-}
-
-.base-directory__item-description {
-  flex-grow: 1;
 }
 
 .base-directory__item-wrapper {
@@ -27,14 +27,23 @@
   align-items: flex-start;
 }
 
+.base-directory__product-small,
+.base-directory__product-big {
+  flex-grow: 1;
+}
+
+.base-directory__item-description {
+  flex-grow: 1;
+}
+
 .base-directory__item-all {
-  padding: 80px 20px 24px;
+  padding: 80px 20px 23px;
 
   list-style: none;
 }
 
 .base-directory__link {
-  margin: 0;
+  width: 100%;
   padding-top: 10px;
 
   font-size: 16px;
@@ -47,34 +56,44 @@
 }
 
 @media (min-width: @tablet-width) {
+  .base-directory {
+    max-width: 100%;
+  }
+
   .base-directory__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
+    margin: 0;
     padding-top: 25px;
-    padding-left: 30px;
-    padding-right: 13px;
 
     border: none;
   }
 
   .base-directory__item {
-    width: 324px;
+    flex-grow: 1;
+
+    width: 42.18%;
     min-height: 431px;
     margin: 0;
     margin-top: 140px;
-    padding: 0;
-    padding-top: 164px;
+    margin-right: 3.9%;
+    margin-left: 3.9%;
+    padding: 162px 37px 0;
 
     background-color: @block-background-color;
   }
 
   .base-directory__item-all {
-    width: 324px;
+    flex-grow: 1;
+
+    width: 42.18%;
     min-height: 431px;
     margin-top: 140px;
-    padding-top: 164px;
+    margin-right: 3.9%;
+    margin-left: 3.9%;
+    padding: 164px 37px 0;
     box-sizing: border-box;
     border: 1px solid @border-color;
   }
@@ -115,23 +134,29 @@
   .base-directory__list {
     justify-content: space-between;
 
-    margin: 0;
-    padding: 0;
-    padding-top: 23px;
-    padding-left: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 22px 16px 0 40px;
   }
 
   .base-directory__item {
+    flex-grow: 0;
+
     width: 245px;
-    margin: 0;
-    margin-top: 142px;
+    margin-top: 143px;
     margin-right: 24px;
+    margin-left: 0;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 
   .base-directory__item-all {
+    flex-grow: 0;
+
     width: 245px;
-    min-height: 431px;
     margin-right: 24px;
+    margin-left: 0;
+    padding-top: 165px;
   }
 
   .base-directory__image-small {
@@ -142,5 +167,9 @@
   .base-directory__image-big {
     width: 245px;
     height: 208px;
+  }
+
+  .base-directory__link {
+    width: auto;
   }
 }

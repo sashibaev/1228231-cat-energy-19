@@ -8,35 +8,39 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__header-nav header-nav">
-        <div class="header-nav__logo">
-          <a class="header-nav__logo-image" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="header-nav__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy'">
-            </picture>
-          </a>
+      <div class="page-header__wrapper">
+        <div class="page-header__header-nav header-nav">
+          <div class="header-nav__logo">
+            <a class="header-nav__logo-image" href="index.html">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header-nav__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy'">
+              </picture>
+            </a>
+          </div>
+          <button class="header-nav__close header-nav__close--hidden" type="button" aria-label="Открыть меню"></button>
         </div>
-        <button class="header-nav__close header-nav__close--hidden" type="button" aria-label="Открыть меню"></button>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list menu-list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item-margin main-nav__item--active">
+              <a class="main-nav__link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list menu-list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item-margin main-nav__item--active">
-            <a class="main-nav__link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="page-main__catalog">
-      <h1 class="page-main__header">Каталог продукции</h1>
+      <div class="page-main__catalog-header--wrapper">
+        <h1 class="page-main__header--catalog">Каталог продукции</h1>
+      </div>
       <section class="base-directory">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="base-directory__list">
@@ -279,7 +283,9 @@
         </ul>
       </section>
       <section class="additional-goods">
-        <h2 class="additional-goods__title">Дополнительные товары</h2>
+        <div class="additional-goods__title--wrapper">
+          <h2 class="additional-goods__title">Дополнительные товары</h2>
+        </div>
         <div class="additional-goods__wrapper">
           <ul class="additional-goods__list">
             <li class="additional-goods__item additional-product">
@@ -292,7 +298,7 @@
               </div>
               <a class="button additional-product__link" href="" aria-label="Заказать">Заказать</a>
             </li>
-            <li class="additional-goods__item">
+            <li class="additional-goods__item additional-product">
               <div class="additional-product__wrapper">
                 <p class="additional-product__title">Питьевая вода</p>
                 <dl class="additional-product__specifications">
@@ -302,7 +308,7 @@
               </div>
               <a class="button additional-product__link" href="" aria-label="Заказать">Заказать</a>
             </li>
-            <li class="additional-goods__item">
+            <li class="additional-goods__item additional-product">
               <div class="additional-product__wrapper">
                 <p class="additional-product__title">Молоко</p>
                 <dl class="additional-product__specifications">
@@ -312,7 +318,7 @@
               </div>
               <a class="button additional-product__link" href="" aria-label="Заказать">Заказать</a>
             </li>
-            <li class="additional-goods__item">
+            <li class="additional-goods__item additional-product">
               <div class="additional-product__wrapper">
                 <p class="additional-product__title">Витамины</p>
                 <dl class="additional-product__specifications">
@@ -324,7 +330,7 @@
             </li>
           </ul>
           <div class="additional-goods__text">
-            <p class="additional-goods__text-content">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additional-goods__text-content">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -333,10 +339,15 @@
     <footer class="page-footer">
       <div class="page-footer__foot-wrapper">
         <div class="page-footer__block">
-          <p class="page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="page-footer__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="page-footer__address">
+            <p class="page-footer__address-wrapper page-footer__address-item">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="page-footer__address-wrapper">Санкт-Петербург</p>
+          </address>
         </div>
-        <div class="page-footer__map"></div>
+        <div class="page-footer__map">
+          <iframe class="page-footer__map-body" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585595961119!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>"
+        </div>
         <div class="page-footer__wrapper">
           <div class="page-footer__logo">
             <a href="index.html">
