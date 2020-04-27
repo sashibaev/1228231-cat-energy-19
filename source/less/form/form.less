@@ -27,12 +27,15 @@
   opacity: 0.5;
 }
 
-.form__input:hover,
-.form__input:focus {
+.form__input::-ms-clear {
+  display: none;
+}
+
+.form__input:hover {
   opacity: 1;
 }
 
-.form__input:active {
+.form__input:focus {
   padding: 12px 0 12px 15px;
 
   border: 2px solid @border-color-active;
@@ -393,9 +396,9 @@
     display: flex;
     justify-content: space-between;
 
-    width: 1300px;
+    width: 1280px;
     margin: 0 auto;
-    padding: 50px 40px 52px 41px;
+    padding: 50px 20px 52px 41px;
     box-sizing: border-box;
   }
 
@@ -444,11 +447,12 @@
 
   .form__comment {
     padding-top: 86px;
+    padding-right: 40px;
     padding-bottom: 84px;
   }
 
   .form__comment-header--wrapper {
-    width: 1300px;
+    width: 1260px;
     margin: 0 auto;
   }
 
@@ -475,7 +479,7 @@
   .form__button-wrapper {
     justify-content: flex-start;
 
-    width: 1300px;
+    width: 1240px;
     margin: 0 auto;
     padding: 0;
     padding-left: 41px;
