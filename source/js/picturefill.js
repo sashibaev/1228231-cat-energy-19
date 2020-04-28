@@ -18,10 +18,10 @@
       var dummySrc = document.createElement("source");
 
       var fixRespimg = function(img) {
-        var source, sizes;
-        var picture = img.parentNode;
+      var source, sizes;
+      var picture = img.parentNode;
 
-        if (picture.nodeName.toUpperCase() === "PICTURE") {
+      if (picture.nodeName.toUpperCase() === "PICTURE") {
           source = dummySrc.cloneNode();
 
           picture.insertBefore(source, picture.firstElementChild);
@@ -409,7 +409,7 @@
     candidate = getCandidateForSrc(src, set);
 
     if ( candidate ) {
-        src = pf.makeUrl(src);
+      src = pf.makeUrl(src);
       img[ pf.ns ].curSrc = src;
       img[ pf.ns ].curCan = candidate;
 
@@ -488,18 +488,18 @@
     }
 
     var inputLength = input.length,
-        url,
-        descriptors,
-        currentDescriptor,
-        state,
-        c,
+      url,
+      descriptors,
+      currentDescriptor,
+      state,
+      c,
 
-        // 2. Let position be a pointer into input, initially pointing at the start
-        //    of the string.
-        pos = 0,
+      // 2. Let position be a pointer into input, initially pointing at the start
+      //    of the string.
+      pos = 0,
 
-        // 3. Let candidates be an initially empty source set.
-        candidates = [];
+      // 3. Let candidates be an initially empty source set.
+      candidates = [];
 
     /**
     * Adds descriptor properties to a candidate, pushes to the candidates array
@@ -751,31 +751,31 @@
   }
 
   /*
-   * Sizes Parser
-   *
-   * By Alex Bell |  MIT License
-   *
-   * Non-strict but accurate and lightweight JS Parser for the string value <img sizes="here">
-   *
-   * Reference algorithm at:
-   * https://html.spec.whatwg.org/multipage/embedded-content.html#parse-a-sizes-attribute
-   *
-   * Most comments are copied in directly from the spec
-   * (except for comments in parens).
-   *
-   * Grammar is:
-   * <source-size-list> = <source-size># [ , <source-size-value> ]? | <source-size-value>
-   * <source-size> = <media-condition> <source-size-value>
-   * <source-size-value> = <length>
-   * http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-sizes
-   *
-   * E.g. "(max-width: 30em) 100vw, (max-width: 50em) 70vw, 100vw"
-   * or "(min-width: 30em), calc(30vw - 15px)" or just "30vw"
-   *
-   * Returns the first valid <css-length> with a media condition that evaluates to true,
-   * or "100vw" if all valid media conditions evaluate to false.
-   *
-   */
+    * Sizes Parser
+    *
+    * By Alex Bell |  MIT License
+    *
+    * Non-strict but accurate and lightweight JS Parser for the string value <img sizes="here">
+    *
+    * Reference algorithm at:
+    * https://html.spec.whatwg.org/multipage/embedded-content.html#parse-a-sizes-attribute
+    *
+    * Most comments are copied in directly from the spec
+    * (except for comments in parens).
+    *
+    * Grammar is:
+    * <source-size-list> = <source-size># [ , <source-size-value> ]? | <source-size-value>
+    * <source-size> = <media-condition> <source-size-value>
+    * <source-size-value> = <length>
+    * http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-sizes
+    *
+    * E.g. "(max-width: 30em) 100vw, (max-width: 50em) 70vw, 100vw"
+    * or "(min-width: 30em), calc(30vw - 15px)" or just "30vw"
+    *
+    * Returns the first valid <css-length> with a media condition that evaluates to true,
+    * or "100vw" if all valid media conditions evaluate to false.
+    *
+    */
 
   function parseSizes(strValue) {
 
@@ -1439,7 +1439,7 @@
     pf.fillImg = noop;
   } else {
 
-    // Set up picture polyfill by polling the document
+      // Set up picture polyfill by polling the document
     (function() {
       var isDomReady;
       var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
@@ -1501,6 +1501,7 @@
   //use this internally for easy monkey patching/performance testing
   pf.fillImgs = picturefill;
   pf.teardownRun = noop;
+
   /* expose methods for testing */
   picturefill._ = pf;
 
@@ -1521,13 +1522,13 @@
 
   while (setOptions && setOptions.length) {
     window.picturefillCFG.push(setOptions.shift());
-  }
+    }
 
-  /* expose picturefill */
-  window.picturefill = picturefill;
+    /* expose picturefill */
+    window.picturefill = picturefill;
 
-  /* expose picturefill */
-  if ( typeof module === "object" && typeof module.exports === "object" ) {
+    /* expose picturefill */
+    if ( typeof module === "object" && typeof module.exports === "object" ) {
     // CommonJS, just export
     module.exports = picturefill;
   } else if ( typeof define === "function" && define.amd ) {
