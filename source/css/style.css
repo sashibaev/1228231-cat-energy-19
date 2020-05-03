@@ -1203,7 +1203,7 @@ li {
   height: 240px;
   margin: 0 auto;
 }
-.example__cat-image--after {
+.example__cat-image--close {
   display: none;
 }
 .example__block-button {
@@ -1355,6 +1355,9 @@ li {
     width: 338px;
     height: 517px;
     overflow: hidden;
+  }
+  .example__cat-image--close {
+    display: block;
   }
   .example__image-wrapper--after {
     position: absolute;
@@ -2196,6 +2199,10 @@ li {
   padding: 12px 0 12px 15px;
   border: 2px solid #444444;
 }
+.form__input--error {
+  padding: 12px 0 12px 15px;
+  border: 2px solid #ff8282;
+}
 .form__header {
   position: absolute;
   content: "";
@@ -2380,7 +2387,10 @@ li {
     font-size: 20px;
     line-height: 20px;
   }
-  .form__input:active {
+  .form__input:focus {
+    padding: 9px 0 10px 18px;
+  }
+  .form__input--error {
     padding: 9px 0 10px 18px;
   }
   .form__header {
@@ -2488,7 +2498,7 @@ li {
             justify-content: space-between;
     width: 1280px;
     margin: 0 auto;
-    padding: 50px 20px 52px 41px;
+    padding: 50px 20px 48px 41px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -2506,7 +2516,6 @@ li {
   }
   .form__input {
     min-height: 52px;
-    padding: 0;
     padding-left: 19px;
   }
   .form__name-input {
@@ -2705,17 +2714,22 @@ li {
   width: 70px;
   margin-right: 9px;
 }
-.contact-details__email-input:focus + .contact-details__icon-email .contact-details__icon-email--fill {
+.contact-details__email-input:focus + .contact-details__icon-email {
   fill: #68b738;
 }
-.contact-details__icon-email {
+.contact-details__icon {
   position: absolute;
+  z-index: 1;
+  fill: #222222;
+}
+.contact-details__icon--error {
+  fill: #ff8282;
+}
+.contact-details__icon-email {
   top: 17px;
   right: 16px;
-  z-index: 1;
   width: 18px;
   height: 14px;
-  fill: #222222;
 }
 .contact-details__phone {
   position: relative;
@@ -2728,17 +2742,14 @@ li {
 .contact-details__phone-label {
   margin-right: 10px;
 }
-.contact-details__phone-input:focus + .contact-details__icon-phone .contact-details__icon-phone--fill {
+.contact-details__phone-input:focus + .contact-details__icon-phone {
   fill: #68b738;
 }
 .contact-details__icon-phone {
-  position: absolute;
   top: 14px;
   right: 13px;
-  z-index: 1;
   width: 21px;
   height: 21px;
-  fill: #222222;
 }
 .contact-details__icon-phone--fill:active {
   fill: #68b738;
