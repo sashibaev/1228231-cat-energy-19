@@ -26,7 +26,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [
@@ -44,5 +44,8 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "del": "^5.1.0"
   }
 }
