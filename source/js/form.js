@@ -24,7 +24,7 @@ try {
   isStorageSupport = false;
 }
 
-for (var i = 0; i < inputForm.length; i++) { 
+for (var i = 0; i < inputForm.length; i++) {
   inputForm[i].required = false;
 }
 
@@ -34,24 +34,24 @@ form.addEventListener("submit", function(evt) {
     console.log("Форма не должна отправляться с пустыми полями");
     console.log(nick.value, weight.value, email.value, phone.value);
 
-    if (!nick.value) {      
+    if (!nick.value) {
       inputName.classList.add("form__input--error");
     } else {
       inputName.classList.remove("form__input--error");
     }
-    if (!weight.value) {      
+    if (!weight.value) {
       inputWeight.classList.add("form__input--error");
     } else {
       inputWeight.classList.remove("form__input--error");
     }
-    if (!email.value) {     
+    if (!email.value) {
       inputEmail.classList.add("form__input--error");
       iconEmail.classList.add("contact-details__icon--error");
     } else  {
       inputEmail.classList.remove("form__input--error");
       iconEmail.classList.remove("contact-details__icon--error");
     }
-    if (!phone.value) {      
+    if (!phone.value) {
       inputPhone.classList.add("form__input--error");
       iconPhone.classList.add("contact-details__icon--error");
     } else {
