@@ -31,9 +31,6 @@ for (var i = 0; i < inputForm.length; i++) {
 form.addEventListener("submit", function(evt) {
   if (!nick.value || !weight.value || !email.value || !phone.value) {
     evt.preventDefault();
-    console.log("Форма не должна отправляться с пустыми полями");
-    console.log(nick.value, weight.value, email.value, phone.value);
-
     if (!nick.value) {
       inputName.classList.add("form__input--error");
     } else {
