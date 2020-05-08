@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Форма-анкета "Подбор программы"</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="font/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="font/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   </head>
   <body>
 
@@ -45,12 +45,12 @@
       </div>
     </header>
 
-    <main class="page-main__form">
-      <div class="page-main__header-form--wrapper">
-        <h1 class="page-main__header--form">Подбор программы</h1>
+    <main class="page-main page-main__form">
+      <div class="page-main__form-header">
+        <h1 class="page-main__form-title">Подбор программы</h1>
       </div>
-      <section class="questionnaire">
-        <div class="questionnaire__text--wrapper">
+      <section class="page-main__questionnaire questionnaire">
+        <div class="questionnaire__text-wrapper">
           <h2 class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</h2>
         </div>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -91,7 +91,7 @@
             </ul>
           </div>
           <div class="form__contact-details contact-details">
-            <div class="contact-details__header--wrapper">
+            <div class="contact-details__header-wrapper">
               <p class="form__header contact-details__header">Контактные данные (владельца кота)</p>
             </div>
             <div class="contact-details__wrapper">
@@ -116,15 +116,15 @@
             </div>
           </div>
           <div class="form__comment">
-            <div class="form__comment-header--wrapper">
+            <div class="form__comment-wrapper">
               <p class="form__header form__comment-header">Комментарий</p>
-              <div class="form__comment-input--wrapper">
+              <div class="form__comment-input-wrapper">
                 <textarea class="form__input form__comment-input" name="comments" rows="7" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </div>
           <div class="form__additionally additionally">
-            <div class="additionally__header--wrapper">
+            <div class="additionally__header-wrapper">
               <p class="form__header additionally__header">Дополнительно</p>
               <ul class="form__additionally-list additionally__list">
                 <li class="form__additionally-item additionally__item">
